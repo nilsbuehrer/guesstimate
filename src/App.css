@@ -3,8 +3,6 @@
   min-height: 100vh;
   background-color: var(--color-dark);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   color: var(--color-bright);
 }
@@ -12,4 +10,8 @@
 .App-title {
   font-weight: 700;
   font-size: 72px;
+}
+
+.App-content {
+  margin-top: 100px;
 }

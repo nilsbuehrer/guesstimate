@@ -1,12 +1,14 @@
-import React from 'react';
-import './App.css';
-import Question from './Question';
+import React from "react";
+import "./App.css";
+import QuestionForm from "./QuestionForm";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="App-title">Guesstimate</h1>
-      <Question />
+      <div className="App-content">
+        <h1 className="App-title">Guesstimate</h1>
+        <QuestionForm />
+      </div>
     </div>
   );
 }

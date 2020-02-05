@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import * as firebase from 'firebase';
+import "firebase/auth";
+import "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyDz3g0Nm9XMlfn2T9l549EuHCQpZwqIGoQ",
@@ -14,8 +16,12 @@ const firebaseConfig = {
     messagingSenderId: "887072051297",
     appId: "1:887072051297:web:48a212739a779d7b061a20",
     measurementId: "G-7S61FY8F00"
-  };
+};
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+export default firebase;
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
